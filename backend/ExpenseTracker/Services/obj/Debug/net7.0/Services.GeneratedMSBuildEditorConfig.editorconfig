@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Services
-build_property.ProjectDir = E:\stuff\Programowania\React\PracaINZ\expense-tracker-app3\backend\ExpenseTracker\Services\
+build_property.ProjectDir = D:\Coding\React\PracaINZ\Pracainz\backend\ExpenseTracker\Services\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

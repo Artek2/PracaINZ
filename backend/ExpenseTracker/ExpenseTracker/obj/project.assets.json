@@ -3609,19 +3609,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\artur\\.nuget\\packages\\": {}
+    "C:\\Users\\komputer\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\stuff\\Programowania\\React\\PracaINZ\\expense-tracker-app3\\backend\\ExpenseTracker\\ExpenseTracker\\ExpenseTracker.csproj",
+      "projectUniqueName": "D:\\Coding\\React\\PracaINZ\\Pracainz\\backend\\ExpenseTracker\\ExpenseTracker\\ExpenseTracker.csproj",
       "projectName": "ExpenseTracker",
-      "projectPath": "E:\\stuff\\Programowania\\React\\PracaINZ\\expense-tracker-app3\\backend\\ExpenseTracker\\ExpenseTracker\\ExpenseTracker.csproj",
-      "packagesPath": "C:\\Users\\artur\\.nuget\\packages\\",
-      "outputPath": "E:\\stuff\\Programowania\\React\\PracaINZ\\expense-tracker-app3\\backend\\ExpenseTracker\\ExpenseTracker\\obj\\",
+      "projectPath": "D:\\Coding\\React\\PracaINZ\\Pracainz\\backend\\ExpenseTracker\\ExpenseTracker\\ExpenseTracker.csproj",
+      "packagesPath": "C:\\Users\\komputer\\.nuget\\packages\\",
+      "outputPath": "D:\\Coding\\React\\PracaINZ\\Pracainz\\backend\\ExpenseTracker\\ExpenseTracker\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\artur\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\komputer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3635,8 +3640,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "E:\\stuff\\Programowania\\React\\PracaINZ\\expense-tracker-app3\\backend\\ExpenseTracker\\Services\\Services.csproj": {
-              "projectPath": "E:\\stuff\\Programowania\\React\\PracaINZ\\expense-tracker-app3\\backend\\ExpenseTracker\\Services\\Services.csproj"
+            "D:\\Coding\\React\\PracaINZ\\Pracainz\\backend\\ExpenseTracker\\Services\\Services.csproj": {
+              "projectPath": "D:\\Coding\\React\\PracaINZ\\Pracainz\\backend\\ExpenseTracker\\Services\\Services.csproj"
             }
           }
         }
@@ -3706,7 +3711,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Pakiet „Microsoft.AspNet.Identity.Core 2.2.4” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1” zamiast platformy docelowej projektu „net7.0”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
+      "message": "Package 'Microsoft.AspNet.Identity.Core 2.2.4' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.AspNet.Identity.Core",
       "targetGraphs": [
         "net7.0"
