@@ -45,7 +45,7 @@ function Chart() {
             return amount;
           }),
         ],
-        backgroundColor: "#0D6E6E",
+        backgroundColor: "#346145",
         tension: 0.3,
       },
       {
@@ -70,8 +70,8 @@ function Chart() {
 }
 
 const ChartStyled = styled.div`
-  background: #1d2e3d;
-  // border: 1px solid #354656;
+  background: var(--bg-200);
+  border: 1px solid var(--bg-300);
   box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
   padding: 1rem;
   border-radius: 20px;

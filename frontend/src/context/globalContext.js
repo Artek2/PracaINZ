@@ -38,7 +38,6 @@ export const GlobalProvider = ({ children }) => {
   const [expenses, setExpenses] = useState([]);
   const [error, setError] = useState(null);
 
-  //calculate incomes
   const addIncome = async (income) => {
     const response = await client
       .post(`${BASE_URL_INCOME}add-income`, income)
@@ -69,7 +68,6 @@ export const GlobalProvider = ({ children }) => {
     return totalIncome;
   };
 
-  //calculate incomes
   const addExpense = async (income) => {
     const response = await client
       .post(`${BASE_URL_EXPENSE}add-expense`, income)

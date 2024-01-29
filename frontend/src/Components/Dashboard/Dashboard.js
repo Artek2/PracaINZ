@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { useGlobalContext } from "../../context/globalContext";
 import History from "../../History/History";
 import { InnerLayout } from "../../styles/Layouts";
-import { dollar } from "../../utils/Icons";
 import Chart from "../Chart/Chart";
 
 function Dashboard() {
@@ -97,7 +96,7 @@ const DashboardStyled = styled.div`
     }
 
     .balance {
-      background: linear-gradient(90deg, rgba(13,110,110,1) 0%, rgba(74,157,156,1) 100%);
+      background: linear-gradient(90deg, var(--primary-100) 0%, var(--primary-200) 100%);
       display: flex;
       flex-direction: column;
       padding: 30px 30px 30px 50px;
@@ -111,7 +110,8 @@ const DashboardStyled = styled.div`
     }
     
       .amount-con {
-        background:var(--dark-color2);
+        background:var(--bg-200);
+        border: 1px solid var(--bg-300);
         padding: 20px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -124,13 +124,12 @@ const DashboardStyled = styled.div`
           grid-column: span 2;
           p{
             font-size:3.5rem;
-            color: var(--white-color);
             font-weight:700;
           }
         }
         .income{
           p{
-            color:var(--green2);
+            color:var(--accent-200);
           }
         }
         .expense{
@@ -145,7 +144,8 @@ const DashboardStyled = styled.div`
 
       .minmax-con {
         margin-top:1.2rem;
-        background:var(--dark-color2);
+        background:var(--bg-200);
+        border: 1px solid var(--bg-300);
         padding: 1rem 2rem 1rem 2rem;
         border-radius:20px;
         
@@ -161,8 +161,8 @@ const DashboardStyled = styled.div`
           }
         }
         .salary-item {
-          // background: var(--green2);
-          // border: 2px solid #ffffff;
+          // background: var(--text-200);
+          // border: 2px solid var(--bg-300);
           // box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
           padding-top: 1rem;
           border-radius: 20px;

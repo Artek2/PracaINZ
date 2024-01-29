@@ -106,10 +106,10 @@ function IncomeItem({
               icon={trash}
               bPad={"1rem"}
               bRad={"50%"}
-              bg={"var(--color-orange)"}
-              color={"var(--white-color)"}
-              iColor={"var(--white-color)"}
-              hColor={"var(--color-green)"}
+              bg={"var(--primary-200)"}
+              color={"var(--text-100)"}
+              iColor={"var(--text-100)"}
+              hColor={"var(--text-100)"}
               onClick={() => deleteItem(id)}
             />
           </div>
@@ -120,8 +120,8 @@ function IncomeItem({
 }
 
 const IncomeItemStyled = styled.div`
-  background: var(--dark-color2);
-  //   border: 2px solid #ffffff;
+  background: var(--bg-200);
+  border: 2px solid var(--bg-300);
   box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
   border-radius: 20px;
   padding: 1rem;
@@ -130,12 +130,12 @@ const IncomeItemStyled = styled.div`
   align-items: center;
   gap: 1rem;
   width: 100%;
-  color: var(--white-color);
+  color: var(--text-200);
   .icon {
     width: 80px;
     height: 80px;
     border-radius: 20px;
-    background: var(--dark-color1);
+    background: var(--bg-100);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -179,7 +179,6 @@ const IncomeItemStyled = styled.div`
           display: flex;
           align-items: center;
           gap: 0.5rem;
-          color: var(--primary-color);
           opacity: 0.8;
         }
       }

@@ -16,7 +16,10 @@ function History() {
           <div key={_id} className="history-item">
             <p
               style={{
-                color: type === "expense" ? "red" : "var(--color-green)",
+                color:
+                  type === "expense"
+                    ? "var(--color-orange)"
+                    : "var(--accent-200)",
               }}
             >
               {title}
@@ -24,7 +27,10 @@ function History() {
 
             <p
               style={{
-                color: type === "expense" ? "red" : "var(--color-green)",
+                color:
+                  type === "expense"
+                    ? "var(--color-orange)"
+                    : "var(--accent-200)",
               }}
             >
               {type === "expense"
@@ -42,12 +48,13 @@ const HistoryStyled = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  background: #1d2e3d;
+  background: var(--bg-200);
+  border: 1px solid var(--bg-300);
   padding: 20px;
   border-radius: 20px;
   margin-top: 30px;
   .history-item {
-    border: 2px solid #ffffff;
+    border: 2px solid var(--bg-300);
     box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
     padding: 1rem;
     border-radius: 20px;

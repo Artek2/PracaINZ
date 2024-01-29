@@ -40,10 +40,6 @@ function App() {
     }
   };
 
-  // const orbMemo = useMemo(() => {
-  //   return <Orb />;
-  // }, []);
-
   return (
     <AppStyled className="App">
       <MainLayout>
@@ -56,7 +52,7 @@ function App() {
 
 const AppStyled = styled.div`
   height: 100vh;
-  background: #0d1f2d;
+  background: var(--bg-100);
   position: relative;
   main {
     flex: 1;

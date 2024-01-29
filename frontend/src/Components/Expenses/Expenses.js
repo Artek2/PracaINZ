@@ -56,8 +56,8 @@ const ExpenseStyled = styled.div`
   .total-income {
     background: linear-gradient(
       90deg,
-      rgba(13, 110, 110, 1) 0%,
-      rgba(74, 157, 156, 1) 100%
+      var(--color-orange) 0%,
+      var(--primary-200) 100%
     );
     display: flex;
     justify-content: center;

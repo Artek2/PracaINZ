@@ -69,7 +69,7 @@ const NavStyled = styled.nav`
   flex-direction: column;
   justify-content: space-between;
   gap: 2rem;
-  color: var(--white-color);
+  color: var(--text-100);
   .user-con {
     height: 100px;
     display: flex;
@@ -80,8 +80,8 @@ const NavStyled = styled.nav`
       height: 80px;
       border-radius: 50%;
       object-fit: cover;
-      background: var(--grey-color);
-      border: 2px solid var(--white-color);
+      background: var(--bg-300);
+      border: 2px solid var(--text-100);
       padding: 0.2rem;
       box-shadow: 0px 1px 17px rgba(0, 0, 0, 0.06);
     }
@@ -114,9 +114,9 @@ const NavStyled = styled.nav`
   }
 
   .active {
-    color: var(--green2);
+    color: var(--text-200);
     i {
-      color: var(--green2);
+      color: var(--text-200);
     }
     &::before {
       content: "";
@@ -125,7 +125,7 @@ const NavStyled = styled.nav`
       top: 0;
       width: 4px;
       height: 100%;
-      background: var(--green1);
+      background: var(--primary-100);
       border-radius: 0 10px 10px 0;
     }
   }

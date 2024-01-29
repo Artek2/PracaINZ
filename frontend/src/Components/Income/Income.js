@@ -36,7 +36,7 @@ function Income() {
                   date={date}
                   type={type}
                   category={category}
-                  indicatorColor="var(--green1)"
+                  indicatorColor="var(--accent-200)"
                   deleteItem={deleteIncome}
                 />
               );
@@ -54,8 +54,8 @@ const IncomeStyled = styled.div`
   .total-income {
     background: linear-gradient(
       90deg,
-      rgba(13, 110, 110, 1) 0%,
-      rgba(74, 157, 156, 1) 100%
+      var(--accent-200) 0%,
+      var(--accent-100) 100%
     );
     display: flex;
     justify-content: center;

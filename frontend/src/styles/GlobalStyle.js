@@ -9,28 +9,31 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     :root{
-        // --primary-color: #FFFFFF;
-        // --primary-color2: 'color: rgba(34, 34, 96, .6)';
-        // --primary-color3: 'color: rgba(34, 34, 96, .4)';
-        // --color-green: #42AD00;
-        // --color-grey: #aaa;
-        // --color-accent: #F56692;
-        // --color-delete: #FF0000;
-
-
        
-
-
         --green1:#0D6E6E;
         --green2:#4a9d9c;
         --green3:#afffff;
-        --color-orange:#FF3D3D;
+        
         --color-neutral:#ffe0c8;
         --dark-color1:#0D1F2D;
         --dark-color2:#1d2e3d;
         --dark-color3:#354656;
         --grey-color:#e0e0e0;
         --white-color:#FFFFFF;
+
+        --primary-100:#eb9c64;
+        --primary-200:#ff8789;
+        --primary-300:#554e4f;
+        --accent-100:#8fbf9f;
+        --accent-200:#346145;
+        --text-100:#353535;
+        --text-200:#000000;
+        --bg-100:#F5ECD7;
+        --bg-200:#ebe2cd;
+        --bg-300:#c2baa6;
+
+        --color-orange:#FF3D3D;
+          
         
     }
 
@@ -42,7 +45,10 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     h1, h2, h3, h4, h5, h6{
-        color: var(--white-color);
+        color: var(--text-200);
+    }
+    p{
+        color:var(--text-100);
     }
 
     .error{
