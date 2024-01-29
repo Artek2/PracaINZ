@@ -33,6 +33,7 @@ export const GlobalStyle = createGlobalStyle`
         --bg-300:#c2baa6;
 
         --color-orange:#FF3D3D;
+        --error-color:#FF3D3D;
           
         
     }

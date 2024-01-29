@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
-import { useGlobalContext } from "../../context/globalContext";
 import { InnerLayout } from "../../styles/Layouts";
 // import Form from "../Form/Form";
 import LoginForm from "./LoginForm";
@@ -29,6 +28,16 @@ const ExpenseStyled = styled.div`
     .incomes {
       flex: 1;
     }
+  }
+
+  .error {
+    display: block;
+    border: 2px solid var(--error-color);
+    border-radius: 5px;
+    padding: 1rem;
+    max-width: 350px;
+    margin-top: 15px;
+    color: var(--text-200);
   }
 `;
 

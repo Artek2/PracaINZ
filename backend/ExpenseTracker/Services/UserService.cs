@@ -1,12 +1,12 @@
-﻿using ExpenseTracker;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.IdentityModel.Tokens;
-using Models;
-using Models.Entities;
-using Services.Model;
-using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
-using System.Text;
+﻿using ExpenseTracker;// Dodajemy using dla przestrzeni nazw ExpenseTrackerusing Microsoft.AspNetCore.Identity; // Dodajemy using dla biblioteki ASP.NET Core Identity
+using Microsoft.AspNetCore.Identity;// Dodajemy using dla biblioteki IdentityModel.Tokens
+using Microsoft.IdentityModel.Tokens; // Dodajemy using dla przestrzeni nazw Models
+using Models;// Dodajemy using dla przestrzeni nazw Models.Entities
+using Models.Entities;// Dodajemy using dla przestrzeni nazw Models.Entities
+using Services.Model;// Dodajemy using dla przestrzeni nazw Services.Model
+using System.IdentityModel.Tokens.Jwt;// Dodajemy using dla biblioteki System.IdentityModel.Tokens.Jwt
+using System.Security.Claims;// Dodajemy using dla biblioteki System.Security.Claims
+using System.Text;// Dodajemy using dla biblioteki System.Text
 namespace Services
 {
   public interface IUserService
@@ -20,6 +20,7 @@ namespace Services
     private readonly ExpenseTrackerDbContext _dbContext;
     private readonly AuthenticationSettings _authenticationSettings;
 
+    // Definiujemy konstruktor klasy UserService, który przyjmuje trzy parametry: dbContext, passwordHasher i authenticationSettings
     public UserService(ExpenseTrackerDbContext dbContext, IPasswordHasher<User> passwordHasher, AuthenticationSettings authenticationSettings)
     {
       _dbContext = dbContext;
@@ -34,7 +35,7 @@ namespace Services
 
       if (user is not null)
       {
-        throw new Exception("Email exist in database");
+        throw new Exception("Podany adres Email jest już używany");
       }
       var newUser = new User()
       {
@@ -44,7 +45,7 @@ namespace Services
 
       if (register.Password != register.ConfirmPassword)
       {
-        throw new Exception("Password not match");
+        throw new Exception("Hasła muszą być identyczne");
       }
       var hashedPassword = _passwordHasher.HashPassword(newUser, register.Password);
 
@@ -60,13 +61,13 @@ namespace Services
 
       if (user is null)
       {
-        throw new Exception("Invalid email or password");
+        throw new Exception("Nieprawidłowa nazwa lub hasło");
       }
 
       var result = _passwordHasher.VerifyHashedPassword(user, user.PasswordHash, dto.Password);
       if (result == PasswordVerificationResult.Failed)
       {
-        throw new Exception("Invalid email or password");
+        throw new Exception("Nieprawidłowy email lub hasło");
       }
 
       var claims = new List<Claim>()
