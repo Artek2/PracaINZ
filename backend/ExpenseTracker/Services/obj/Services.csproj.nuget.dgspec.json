@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Coding\\React\\PracaINZ\\Pracainz\\backend\\ExpenseTracker\\Services\\Services.csproj": {}
+    "E:\\stuff\\Programowania\\React\\PracaINZ\\expense-tracker-app3\\backend\\ExpenseTracker\\Services\\Services.csproj": {}
   },
   "projects": {
-    "D:\\Coding\\React\\PracaINZ\\Pracainz\\backend\\ExpenseTracker\\Models\\Models.csproj": {
+    "E:\\stuff\\Programowania\\React\\PracaINZ\\expense-tracker-app3\\backend\\ExpenseTracker\\Models\\Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Coding\\React\\PracaINZ\\Pracainz\\backend\\ExpenseTracker\\Models\\Models.csproj",
+        "projectUniqueName": "E:\\stuff\\Programowania\\React\\PracaINZ\\expense-tracker-app3\\backend\\ExpenseTracker\\Models\\Models.csproj",
         "projectName": "Models",
-        "projectPath": "D:\\Coding\\React\\PracaINZ\\Pracainz\\backend\\ExpenseTracker\\Models\\Models.csproj",
-        "packagesPath": "C:\\Users\\komputer\\.nuget\\packages\\",
-        "outputPath": "D:\\Coding\\React\\PracaINZ\\Pracainz\\backend\\ExpenseTracker\\Models\\obj\\",
+        "projectPath": "E:\\stuff\\Programowania\\React\\PracaINZ\\expense-tracker-app3\\backend\\ExpenseTracker\\Models\\Models.csproj",
+        "packagesPath": "C:\\Users\\artur\\.nuget\\packages\\",
+        "outputPath": "E:\\stuff\\Programowania\\React\\PracaINZ\\expense-tracker-app3\\backend\\ExpenseTracker\\Models\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\komputer\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\artur\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -85,21 +81,17 @@
         }
       }
     },
-    "D:\\Coding\\React\\PracaINZ\\Pracainz\\backend\\ExpenseTracker\\Services\\Services.csproj": {
+    "E:\\stuff\\Programowania\\React\\PracaINZ\\expense-tracker-app3\\backend\\ExpenseTracker\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Coding\\React\\PracaINZ\\Pracainz\\backend\\ExpenseTracker\\Services\\Services.csproj",
+        "projectUniqueName": "E:\\stuff\\Programowania\\React\\PracaINZ\\expense-tracker-app3\\backend\\ExpenseTracker\\Services\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "D:\\Coding\\React\\PracaINZ\\Pracainz\\backend\\ExpenseTracker\\Services\\Services.csproj",
-        "packagesPath": "C:\\Users\\komputer\\.nuget\\packages\\",
-        "outputPath": "D:\\Coding\\React\\PracaINZ\\Pracainz\\backend\\ExpenseTracker\\Services\\obj\\",
+        "projectPath": "E:\\stuff\\Programowania\\React\\PracaINZ\\expense-tracker-app3\\backend\\ExpenseTracker\\Services\\Services.csproj",
+        "packagesPath": "C:\\Users\\artur\\.nuget\\packages\\",
+        "outputPath": "E:\\stuff\\Programowania\\React\\PracaINZ\\expense-tracker-app3\\backend\\ExpenseTracker\\Services\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\komputer\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\artur\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -113,8 +105,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\Coding\\React\\PracaINZ\\Pracainz\\backend\\ExpenseTracker\\Models\\Models.csproj": {
-                "projectPath": "D:\\Coding\\React\\PracaINZ\\Pracainz\\backend\\ExpenseTracker\\Models\\Models.csproj"
+              "E:\\stuff\\Programowania\\React\\PracaINZ\\expense-tracker-app3\\backend\\ExpenseTracker\\Models\\Models.csproj": {
+                "projectPath": "E:\\stuff\\Programowania\\React\\PracaINZ\\expense-tracker-app3\\backend\\ExpenseTracker\\Models\\Models.csproj"
               }
             }
           }

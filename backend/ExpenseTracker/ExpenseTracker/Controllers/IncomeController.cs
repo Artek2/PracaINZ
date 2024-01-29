@@ -8,10 +8,23 @@ using System.Net.Mime; // .NET's System.Net.Mime for MIME type handling.
 // Defining the namespace for this controller within the application's structure.
 namespace ExpenseTracker.Controllers
 {
+<<<<<<< Updated upstream
     [ApiController] // Annotation from ASP.NET Core to denote this class as a controller with API-specific features.
     [Route("[controller]")] // ASP.NET Core routing, automates the use of the controller's name in the route.
     [Authorize] // ASP.NET Core's authorization filter, ensuring the controller's actions require a valid user.
     public class IncomeController : ControllerBase
+=======
+  // Zaimplementowany kontroler do zarządzania przychodami
+  [ApiController]
+  [Route("[controller]")]
+  [Authorize] // Użytkownik musi być zalogowany, aby wykonać żądanie
+  public class IncomeController : ControllerBase
+  {
+    private readonly IIncomeService _incomeService;
+
+    // Zależność do usługi zarządzania przychodami
+    public IncomeController(IIncomeService incomeService)
+>>>>>>> Stashed changes
     {
         // Field for the service dependency that handles income-related operations.
         private readonly IIncomeService _incomeService;
@@ -58,4 +71,46 @@ namespace ExpenseTracker.Controllers
             return Ok(result); // Returns a 200 OK status with the list of income records.
         }
     }
+<<<<<<< Updated upstream
+=======
+
+    // Usuwanie przychodu
+    [HttpDelete("delete-income/{id}")]
+    [SwaggerOperation(Summary = "Remove income")]
+    [Consumes(MediaTypeNames.Application.Json)]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    public async Task<IActionResult> RemoveIncome([FromRoute] int id)
+    {
+      await _incomeService.DeleteAsync(id);
+
+      return Ok(id);
+    }
+
+    // Dodawanie nowego przychodu
+    [HttpPost("add-income")]
+    [SwaggerOperation(Summary = "Add income")]
+    [Consumes(MediaTypeNames.Application.Json)]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    public async Task<IActionResult> AddIncome(IncomeExpenseRequest request)
+    {
+      await _incomeService.CreateAsync(request);
+
+      return Ok();
+    }
+
+
+    // Pobieranie listy wszystkich przychodów
+    [HttpGet("get-income")]
+    [SwaggerOperation(Summary = "Add income")]
+    [Consumes(MediaTypeNames.Application.Json)]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    public async Task<IActionResult> GetIncome()
+    {
+      var result = await _incomeService.GetAllAsync();
+
+      // Zwracamy listę przychodów oraz kod odpowiedzi
+      return Ok(result);
+    }
+  }
+>>>>>>> Stashed changes
 }
