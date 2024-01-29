@@ -96,13 +96,13 @@ const ExpenseFormStyled = styled.form`
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 5px;
-    border: 2px solid #fff;
+    border: 2px solid var(--bg-300);
     background: transparent;
     resize: none;
     box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
-    color: var(--white-color);
+    color: var(--text-200);
     &::placeholder {
-      color: var(--white-color);
+      color: var(--text-200);
     }
   }
   .input-control {
@@ -115,11 +115,9 @@ const ExpenseFormStyled = styled.form`
     display: flex;
     justify-content: flex-end;
     select {
-      // color: rgba(34, 34, 96, 0.4);
       &:focus,
       &:active {
-        // color: var(--green1);
-        background: var(--dark-color2);
+        background: var(--bg-200);
       }
     }
   }
@@ -127,10 +125,11 @@ const ExpenseFormStyled = styled.form`
   .submit-btn {
     button {
       box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
-      background: var(--green1) !important;
+      background: var(--accent-200) !important;
+      color: var(--text-200) !important;
       &:hover {
-        background: var(--dark-color3) !important;
-        // color: var(--dark-color1) !important;
+        background: var(--primary-100) !important;
+        color: var(--text-200) !important;
       }
     }
   }

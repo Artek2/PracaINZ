@@ -10,16 +10,16 @@ export const GlobalStyle = createGlobalStyle`
 
     :root{
        
-        --green1:#0D6E6E;
-        --green2:#4a9d9c;
-        --green3:#afffff;
+        // --green1:#0D6E6E;
+        // --green2:#4a9d9c;
+        // --green3:#afffff;
         
-        --color-neutral:#ffe0c8;
-        --dark-color1:#0D1F2D;
-        --dark-color2:#1d2e3d;
-        --dark-color3:#354656;
-        --grey-color:#e0e0e0;
-        --white-color:#FFFFFF;
+        // --color-neutral:#ffe0c8;
+        // --dark-color1:#0D1F2D;
+        // --dark-color2:#1d2e3d;
+        // --dark-color3:#354656;
+        // --grey-color:#e0e0e0;
+        // --white-color:#FFFFFF;
 
         --primary-100:#eb9c64;
         --primary-200:#ff8789;

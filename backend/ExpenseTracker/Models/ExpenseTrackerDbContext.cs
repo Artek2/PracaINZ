@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore; 
+﻿using Microsoft.EntityFrameworkCore;
 using Models.Entities;
 using Models.Entities.Abstraction;
 
@@ -13,7 +13,7 @@ namespace Models
     public DbSet<IncomeExpense> IncomeExpense { get; set; }
     public DbSet<User> Users { get; set; }
 
-    protected override void OnModelCreating(ModelBuilder modelBuilder)a
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
       modelBuilder.Entity<User>(entity =>
       {
