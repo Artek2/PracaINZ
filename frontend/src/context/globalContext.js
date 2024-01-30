@@ -141,17 +141,9 @@ export const GlobalProvider = ({ children }) => {
 
   const register = async (user) => {
     try {
-      const response = await client.post(`${BASE_URL_USER}register`, user);
-      if (response.ok) {
-        const json = await response.json();
-        // Handle successful registration
-      } else {
-        // Handle error response
-      }
+      var response = await client.post(`${BASE_URL_USER}register`, user);
+      alert(response.data);
     } catch (error) {
-      // Handle network or other errors
-    }
-    {
       if (error.response) {
         // The request was made and the server responded with a status code
         // that falls out of the range of 2xx

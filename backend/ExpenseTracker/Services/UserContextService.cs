@@ -3,6 +3,8 @@ using System.Security.Claims;
 
 namespace Services
 {
+  //uzyskanie aktualnie zalogowanego użytkownika i jego identyfikatora.
+  
   public interface IUserContextService
   {
     ClaimsPrincipal User { get; }
